@@ -1,6 +1,6 @@
 {% set name = "simplejson" %}
-{% set version = "3.12.0" %}
-{% set sha256 = "df5e38f5e0a24abe0e02276aa5c3f8504150047a51c0b6b848b8153e6e6d395e" %}
+{% set version = "3.13.2" %}
+{% set sha256 = "4c4ecf20e054716cc1e5a81cadc44d3f4027108d8dd0861d8b1e3bd7a32d4f0a" %}
 
 package:
   name: {{ name|lower }}
