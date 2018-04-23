@@ -16,6 +16,8 @@ build:
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
+  build:
+    - {{ compiler('c') }}
   host:
     - python
     - setuptools
@@ -25,6 +27,7 @@ requirements:
 test:
   imports:
     - simplejson
+    - simplejson._speedups
     - simplejson.tests
 
 about:
