@@ -21,6 +21,8 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
+    - wheel
   run:
     - python
 
@@ -29,6 +31,10 @@ test:
     - simplejson
     - simplejson._speedups   # [python_impl != 'pypy']
     - simplejson.tests
+  requires:
+    - pip 
+  commands:
+    - pip check
 
 about:
   home: http://github.com/simplejson/simplejson
