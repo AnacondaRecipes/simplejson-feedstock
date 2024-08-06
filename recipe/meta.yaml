@@ -14,7 +14,8 @@ build:
   script:
     - export REQUIRE_SPEEDUPS=1  # [not win]
     - set REQUIRE_SPEEDUPS=1  # [win]
-    - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  skip: True # [py<38]
 
 requirements:
   build:
@@ -43,13 +44,12 @@ about:
   license_family: MIT
   license_file: LICENSE.txt
   summary: Simple, fast, extensible JSON encoder/decoder for Python
-
   description: |
     simplejson is a simple, fast, complete, correct and extensible
     JSON <https://json.org> encoder and decoder for Python 2.5+ and
     Python 3.3+. It is pure Python code with no dependencies, but includes
     an optional C extension for a serious speed boost.
-  doc_url: https://simplejson.readthedocs.io/
+  doc_url: https://readthedocs.org/projects/simplejson/
   dev_url: https://github.com/simplejson/simplejson
 
 extra:
