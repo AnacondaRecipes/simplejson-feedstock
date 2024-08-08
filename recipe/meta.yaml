@@ -15,7 +15,6 @@ build:
     - export REQUIRE_SPEEDUPS=1  # [not win]
     - set REQUIRE_SPEEDUPS=1  # [win]
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  skip: True # [py<38]
 
 requirements:
   build:
