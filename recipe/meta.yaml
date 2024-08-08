@@ -49,7 +49,7 @@ about:
     JSON <https://json.org> encoder and decoder for Python 2.5+ and
     Python 3.3+. It is pure Python code with no dependencies, but includes
     an optional C extension for a serious speed boost.
-  doc_url: https://readthedocs.org/projects/simplejson/
+  doc_url: https://simplejson.readthedocs.io/
   dev_url: https://github.com/simplejson/simplejson
 
 extra:
